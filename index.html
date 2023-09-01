@@ -1,0 +1,72 @@
+<!--
+  Anthony Balfour
+  4/3/2023
+  Section AF
+  TA: Donovan Jordan Kong, Sonia Saitawdekar
+
+  This page is about the Seattle Seahawks. It has a navbar containing the names of players
+  whose information may be added in the future. It has various images of the Seahawks players
+  and their head coach.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/ec8b2e4dff.js" crossorigin="anonymous"></script>
+    <title>Seahawks Players</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <figure>
+          <!-- Image source: https://freebiesupply.com/logos/seattle-seahawks-logo/ -->
+          <img id="logo"
+          src="assets/seattle-seahawks-logo/seattle-seahawks-logo-transparent.png"
+          alt="seahawks logo" >
+        </figure>
+        <div id="player-links">
+          <a href="#geno">GENO</a>
+          <a href="#tyler">TYLER</a>
+          <a href="#bobby">BOBBY</a>
+          <a href="#tariq"> TARIQ</a>
+          <a href="#kenneth">KENNETH</a>
+        </div>
+      </nav>
+    </header>
+    <div id="players-container" class="flex column">
+      <img id="players" src="assets/seahawks.png" alt="Seahawks players pumped up">
+      <h1>
+        <span>S</span>
+        <span>E</span>
+        <span>A</span>
+        <span>H</span>
+        <span>A</span>
+        <span>W</span>
+        <span>K</span>
+        <span>S</span>
+      </h1>
+    </div>
+    <section id="carousel-section" class="flex">
+      <div id="carousel-wrapper">
+        <span id="left" class="fa-solid fa-angle-left"></span>
+        <figure id="carousel">
+          <img class="carousel-img" src="assets/bobby.jpg" alt="Bobby Wagner making a tackle">
+          <img class="carousel-img" src="assets/geno-pumped.jpg" alt="Geno Smith pumped up">
+          <img class="carousel-img" src="assets/tariq.jpg" alt="Tariq Woolen making an interception">
+          <img class="carousel-img" src="assets/tyler.jpg" alt="Tyler Locket catching a touchdown">
+          <img class="carousel-img" src="assets/kenneth.jpg" alt="Kenneth Walker running">
+        </figure>
+        <p>drag to scroll</p>
+        <button>Add Image</button>
+        <span id="right" class="fa-solid fa-angle-right"></span>
+      </div>
+    </section>
+  </body>
+</html>
